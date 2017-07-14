@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@id/backgroundView"
+        android:background="@color/colorPrimary"
+        android:padding="@dimen/button_padding"
+        android:layout_width="260dp"
+        android:layout_height="120dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/leyendaBeneficios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textColor="@color/blanco"
+            android:textStyle="bold"
+            android:text="BENEFICIOS:"/>
+        <TextView
+            android:id="@+id/avales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/blanco"
+            android:text="Sin Avales y sin Garantias"/>
+        <TextView
+            android:id="@+id/deposito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/blanco"
+            android:text="Depositamos a tu Banco"/>
+        <TextView
+            android:id="@+id/oficinas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/blanco"
+            android:text="Oficinas en tu Ciudad"/>
+
+    </LinearLayout>
+
+</LinearLayout>

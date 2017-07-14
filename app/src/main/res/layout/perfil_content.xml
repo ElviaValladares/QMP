@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/blanco"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/foto"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/azulF"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="PERFIL" />
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:background="#ffd5d5d5"
+        android:id="@+id/linea"
+        android:layout_above="@+id/compartir"
+        android:layout_toRightOf="@+id/imagen"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:id="@+id/usuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="52dp"
+            android:textColor="@color/azulF"
+            android:textSize="15sp"
+            android:text="Usuario:" />
+         <EditText
+            android:layout_width="165dp"
+             android:layout_height="30dp"
+            android:background="@drawable/caja_texto_normal"
+            android:layout_weight="0.57" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="25dp"
+            android:textColor="@color/azulF"
+            android:textSize="15sp"
+            android:text="Contraseña:" />
+        <EditText
+            android:layout_width="165dp"
+            android:layout_height="30dp"
+            android:background="@drawable/caja_texto_normal"
+            android:layout_weight="0.57" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/azulF"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="INF. GENERAL" />
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:background="#ffd5d5d5"
+        android:layout_above="@+id/compartir"
+        android:layout_toRightOf="@+id/imagen"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="30dp"
+            android:textColor="@color/azulF"
+            android:textSize="15sp"
+            android:text="Nombre(s):" />
+        <EditText
+            android:id="@+id/nombre"
+            android:layout_width="165dp"
+            android:layout_height="30dp"
+            android:background="@drawable/caja_texto_normal"
+            android:layout_weight="0.57" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/azulF"
+            android:textSize="15sp"
+            android:text="Apellido Paterno:" />
+        <EditText
+            android:id="@+id/apellidoPat"
+            android:layout_width="165dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="30dp"
+            android:background="@drawable/caja_texto_normal"
+            android:layout_weight="0.57" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/azulF"
+            android:textSize="15sp"
+            android:text="Apellido Materno:" />
+        <EditText
+            android:id="@+id/apellidoMat"
+            android:layout_width="165dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="30dp"
+            android:background="@drawable/caja_texto_normal"
+            android:layout_weight="0.57" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="40dp"
+            android:textColor="@color/azulF"
+            android:textSize="15sp"
+            android:text="Fecha Nacimiento:" />
+        <EditText
+            android:id="@+id/fechaPromesaPago"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="23dp"
+            android:hint="00/00/00"
+            android:background="@drawable/caja_texto_normal"
+            android:enabled="false"
+            android:gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+            <ImageButton
+                android:id="@+id/boton_fecha"
+                android:layout_width="29dp"
+                android:layout_height="28dp"
+                android:background="@drawable/boton_1"
+                android:src="@mipmap/ic_date_range_white_36dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:id="@+id/rfc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="75dp"
+            android:textColor="@color/azulF"
+            android:textSize="15sp"
+            android:text="RFC:" />
+        <EditText
+            android:layout_width="165dp"
+            android:layout_height="30dp"
+            android:background="@drawable/caja_texto_normal"
+            android:layout_weight="0.57" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:id="@+id/curp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="65dp"
+            android:textColor="@color/azulF"
+            android:textSize="15sp"
+            android:text="CURP:" />
+        <EditText
+            android:layout_width="165dp"
+            android:layout_height="30dp"
+            android:background="@drawable/caja_texto_normal"
+            android:layout_weight="0.57" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/azulF"
+            android:textSize="15sp"
+            android:text="Identificación:" />
+        <Spinner
+            style="@style/spinner_style"
+            android:id="@+id/id"
+            android:layout_width="187dp"
+            android:layout_height="36dp"
+            android:layout_below="@+id/text_view_1"
+            android:layout_marginLeft="40dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:id="@+id/numIdent"
+            android:layout_width="65dp"
+            android:layout_height="69dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/azulF"
+            android:textSize="15sp"
+            android:text="Num. Identificación:"
+            android:layout_weight="0.23" />
+        <EditText
+            android:layout_width="165dp"
+            android:layout_height="30dp"
+            android:background="@drawable/caja_texto_normal"
+            android:layout_weight="0.31" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/azulF"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="MI DIRECCION" />
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:background="#ffd5d5d5"
+        android:layout_above="@+id/compartir"
+        android:layout_toRightOf="@+id/imagen"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:id="@+id/calle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="65dp"
+            android:textColor="@color/azulF"
+            android:textSize="15sp"
+            android:text="Calle:" />
+        <EditText
+            android:layout_width="165dp"
+            android:layout_height="30dp"
+            android:background="@drawable/caja_texto_normal"
+            android:layout_weight="0.57" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:id="@+id/numm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="45dp"
+            android:textColor="@color/azulF"
+            android:textSize="15sp"
+            android:text="Numero:" />
+        <EditText
+            android:layout_width="165dp"
+            android:layout_height="30dp"
+            android:background="@drawable/caja_texto_normal"
+            android:layout_weight="0.57" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:id="@+id/cp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="75dp"
+            android:textColor="@color/azulF"
+            android:textSize="15sp"
+            android:text="C.P:" />
+        <EditText
+            android:layout_width="165dp"
+            android:layout_height="30dp"
+            android:background="@drawable/caja_texto_normal"
+            android:layout_weight="0.57" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:id="@+id/col"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="50dp"
+            android:textColor="@color/azulF"
+            android:textSize="15sp"
+            android:text="Colonia:" />
+        <EditText
+            android:layout_width="165dp"
+            android:layout_height="30dp"
+            android:background="@drawable/caja_texto_normal"
+            android:layout_weight="0.57" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="50dp"
+            android:textColor="@color/azulF"
+            android:textSize="15sp"
+            android:text="Estado:" />
+        <Spinner
+            style="@style/spinner_style"
+            android:id="@+id/estado"
+            android:layout_width="187dp"
+            android:layout_height="36dp"
+            android:layout_below="@+id/text_view_1"
+            android:layout_marginLeft="40dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:textColor="@color/azulF"
+            android:textSize="15sp"
+            android:text="Municipio:" />
+        <Spinner
+            style="@style/spinner_style"
+            android:id="@+id/municipio"
+            android:layout_width="187dp"
+            android:layout_height="36dp"
+            android:layout_below="@+id/text_view_1"
+            android:layout_marginLeft="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".6"
+        android:orientation="horizontal"
+
+        android:gravity="right">
+        <Button
+            android:id="@+id/boton_pago_credito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GUARDAR"
+            android:drawableRight="@mipmap/ic_keyboard_arrow_right_white_24dp"
+            android:textColor="@color/blanco"
+            android:textSize="12dp"
+            android:paddingRight="7dp"
+            android:paddingLeft="7dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/boton_1"/>
+    </LinearLayout>
+
+</LinearLayout>
+</android.support.v4.widget.NestedScrollView>

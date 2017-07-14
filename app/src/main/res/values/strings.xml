@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Quien Me Presta</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="send_to">Share Easy Swipe Maker</string>
+
+    <string name="action_label">Action is clicked</string>
+    <string name="delete_label">Delete is clicked</string>
+
+    <!-- ACCESO QMP-->
+    <string name="email">Correo Electronico</string>
+    <string name="contrasenia">Contraseña</string>
+    <string name="registrar">Registrarse</string>
+    <string name="recuperarContrasenia">¿Se te olvido la contraseña?</string>
+
+    <!--FIN ACCESO QMP -->
+</resources>

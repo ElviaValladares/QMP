@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/blanco"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/billete"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/leyenda_datostransaccionales"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/azulF"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="PIDE TU CREDITO" />
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:background="#ffd5d5d5"
+        android:id="@+id/linea"
+        android:layout_above="@+id/compartir"
+        android:layout_toRightOf="@+id/imagen"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/Compania"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/azulF"
+            android:textSize="15sp"
+            android:text="¿Para que necesitas el dinero?" />
+        <Spinner
+            style="@style/spinner_style"
+            android:id="@+id/spinnerCuantoDinero"
+            android:layout_width="187dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/text_view_1"
+            android:layout_marginLeft="40dp" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/azulF"
+        android:textSize="15sp"
+        android:text="¿Cuanto Necesitas?" />
+    <EditText
+        android:id="@+id/cantidad"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:hint="$5,000.00"
+        android:textColor="@color/azulF"
+        android:maxLength="8"
+        android:textColorHint="@color/azulF"
+        android:gravity="center"
+        style="@style/cajaTextoEmail" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/azulF"
+            android:textSize="15sp"
+            android:text="¿Como quieres realizar tus pagos?" />
+        <Spinner
+            style="@style/spinner_style"
+            android:id="@+id/spinnerPagos"
+            android:layout_width="187dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/text_view_1"
+            android:layout_marginLeft="40dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/azulF"
+            android:textSize="15sp"
+            android:text="¿En cuanto tiempo quieres pagarlo?" />
+        <Spinner
+            style="@style/spinner_style"
+            android:id="@+id/spinnerTiempoPagos"
+            android:layout_width="187dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/text_view_1"
+            android:layout_marginLeft="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".6"
+        android:orientation="horizontal"
+
+        android:gravity="right">
+        <Button
+            android:id="@+id/boton_pago_credito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Iniciar Proceso"
+            android:drawableRight="@mipmap/ic_keyboard_arrow_right_white_24dp"
+            android:textColor="@color/blanco"
+            android:textSize="12dp"
+            android:paddingRight="7dp"
+            android:paddingLeft="7dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/boton_1"/>
+    </LinearLayout>
+
+    </LinearLayout>

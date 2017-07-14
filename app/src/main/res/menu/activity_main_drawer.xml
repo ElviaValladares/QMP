@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/inicio"
+            android:icon="@mipmap/ic_home"
+            android:title="Inicio" />
+        <item
+            android:id="@+id/solicitaCred"
+            android:icon="@mipmap/ic_assignment_black_24dp"
+            android:title="Solicitar Credito" />
+        <item
+            android:id="@+id/misCreditos"
+            android:icon="@mipmap/ic_monetization_on_black"
+            android:title="Mis Creditos" />
+
+        <item
+            android:id="@+id/miPerfil"
+            android:icon="@mipmap/ic_account_black_18dp"
+            android:title="Mi Perfil" />
+
+        <item
+            android:id="@+id/miScore"
+            android:icon="@mipmap/ic_poll_black_24dp"
+            android:title="Mi Score" />
+
+        <item
+            android:id="@+id/configuracion"
+            android:icon="@mipmap/ic_settings_black_24dp"
+            android:title="Configuracion" />
+        <item
+            android:id="@+id/cerrarSesion"
+            android:icon="@mipmap/ic_close"
+            android:title="Cerrar Sesion" />
+    </group>
+
+</menu>

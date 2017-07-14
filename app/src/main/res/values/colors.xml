@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ESTOS SON LOS COLORES PRINCIPALES -->
+    <color name="colorPrimary">#d6458a</color>
+    <color name="colorPrimaryDark">#393F4B</color>
+    <color name="colorAccent">#000000</color>
+
+    <!-- COLORES SECUNDARIOS  -->
+    <color name="verdeP">#73b200</color>
+    <color name="blanco">#ffffff</color>
+    <color name="negroB">#292d2e</color>
+    <color name="grisOsc">#393F4B</color>
+    <color name="grisF">#698190</color>
+    <color name="gris">#D5D6D2</color>
+    <color name="grisB">#C4C4C4</color>
+    <color name="grisC">#EDF1F7</color>
+    <color name="verdeOsc">#077536</color>
+    <color name="verdeF">#37a22e</color>
+    <color name="verde">#7AB317</color>
+    <color name="azulM">#21498c</color>
+    <color name="azulF">#326ec7</color>
+    <color name="rosaF">#d71b7c</color>
+    <color name="rosa">#E0088C</color>
+    <color name="rosaOsc">#870a42</color>
+    <color name="rojoC">#A40027</color>
+    <color name="placeholder">@color/colorAccent</color>
+
+</resources>

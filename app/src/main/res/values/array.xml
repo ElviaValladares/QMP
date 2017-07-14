@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="MotivoPrestamo">
+        <item>SELECCIONE</item>
+        <item>Financiar mi Negocio</item>
+        <item>Pagar Deudas</item>
+        <item>Remodelar mi casa</item>
+        <item>Financiar una fiesta Familiar</item>
+        <item>Comprar un carro</item>
+        <item>Un tratamiento médico</item>
+    </string-array>
+    <string-array name="Pagos">
+        <item>SELECCIONE</item>
+        <item>Semanal</item>
+        <item>Decenal</item>
+        <item>Quincenal</item>
+        <item>Mensual</item>
+    </string-array>
+    <string-array name="TiempoPagos">
+        <item>SELECCIONE</item>
+        <item>1 Mes</item>
+        <item>2 Meses</item>
+        <item>3 Meses</item>
+        <item>4 Meses</item>
+        <item>5 Meses</item>
+        <item>6 Meses</item>
+        <item>7 Meses</item>
+        <item>8 Meses</item>
+    </string-array>
+
+    <string-array name="municipio">
+        <item>SELECCIONE</item>
+        <item>Santa Lucia del Camino</item>
+        <item>1 Etapa</item>
+    </string-array>
+    <string-array name="estados">
+        <item>SELECCIONE</item>
+        <item>Aguascalientes</item>
+        <item>Durango</item>
+        <item>Oaxaca</item>
+        <item>Mexico</item>
+    </string-array>
+    <string-array name="Identificacion">
+        <item>SELECCIONE</item>
+        <item>Elector</item>
+        <item>Pasaporte</item>
+    </string-array>
+
+
+</resources>
