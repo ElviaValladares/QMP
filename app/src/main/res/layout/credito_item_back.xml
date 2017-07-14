@@ -98,7 +98,7 @@
                         android:layout_height="30dp"
                         android:text="ME INTERESA"
                         android:textColor="@color/blanco"
-                        android:background="@drawable/boton_1"/>
+                        android:background="@drawable/estilo_boton"/>
                     <Button
                        android:layout_width="match_parent"
                         android:layout_height="30dp"

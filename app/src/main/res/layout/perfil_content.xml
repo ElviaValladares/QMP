@@ -203,7 +203,7 @@
                 android:id="@+id/boton_fecha"
                 android:layout_width="29dp"
                 android:layout_height="28dp"
-                android:background="@drawable/boton_1"
+                android:background="@drawable/estilo_boton"
                 android:src="@mipmap/ic_date_range_white_36dp"/>
         </LinearLayout>
     </LinearLayout>
@@ -472,7 +472,7 @@
             android:paddingRight="7dp"
             android:paddingLeft="7dp"
             android:layout_gravity="bottom"
-            android:background="@drawable/boton_1"/>
+            android:background="@drawable/estilo_boton"/>
     </LinearLayout>
 
 </LinearLayout>

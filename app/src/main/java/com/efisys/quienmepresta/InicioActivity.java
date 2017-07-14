@@ -23,16 +23,16 @@ public class InicioActivity extends AppCompatActivity implements View.OnClickLis
         super.onCreate(savedInstanceState);
         setContentView(R.layout.acceso_activity);
 
-        email = (EditText) findViewById(R.id.textemail);
-        password = (EditText) findViewById(R.id.textpassword);
-        ingresar = (Button) findViewById(R.id.buttonIngresar);
+        email = (EditText) findViewById(R.id.edTxtEmail);
+        password = (EditText) findViewById(R.id.edTxtContrasenia);
+        ingresar = (Button) findViewById(R.id.btnIngresar);
         ingresar.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.buttonIngresar:
+            case R.id.btnIngresar:
                 //Log.i("onclick", String.valueOf(email.equals(correo)));
                 if (email.getText().toString().equals(correo) & password.getText().toString().equals(pass)){
                     Bundle contenedor = new Bundle();
