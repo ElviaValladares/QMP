@@ -15,6 +15,17 @@
     <string name="contrasenia">Contraseña</string>
     <string name="registrar">Registrarse</string>
     <string name="recuperarContrasenia">¿Se te olvido la contraseña?</string>
-
     <!--FIN ACCESO QMP -->
+
+    <!--CREDITO ITEM BACK-->
+    <string name="leyendaBeneficio">BENEFICIOS:</string>
+    <string name="avales">Sin Avales y sin Garantias</string>
+    <string name="deposito">Depositamos a tu Banco</string>
+    <string name="oficinas">Oficinas en tu Ciudad</string>
+    <!--FIN ITEM FRONT-->
+    <string name="leyendaCat">CAT:</string>
+    <string name="meInteresa">ME INTERESA</string>
+    <string name="masInfo">+ INFORMACION</string>
+    <!--CREDITO ITEM FRONT-->
+
 </resources>

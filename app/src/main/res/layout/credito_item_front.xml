@@ -1,48 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <LinearLayout
-        android:id="@id/backgroundView"
-        android:background="@color/colorPrimary"
-        android:padding="@dimen/button_padding"
-        android:layout_width="260dp"
-        android:layout_height="120dp"
-        android:orientation="vertical">
+<com.xenione.libs.swipemaker.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/foregroundView"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@color/blanco"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/fondo"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@color/blanco"
+        android:scaleType="centerCrop" />
 
-        <TextView
-            android:id="@+id/leyendaBeneficios"
-            android:layout_width="wrap_content"
+    <RelativeLayout
+        android:id="@+id/contItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/contItemHorizontal"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="17sp"
-            android:textColor="@color/blanco"
-            android:textStyle="bold"
-            android:text="BENEFICIOS:"/>
-        <TextView
-            android:id="@+id/avales"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="14sp"
-            android:layout_marginLeft="10dp"
-            android:textColor="@color/blanco"
-            android:text="Sin Avales y sin Garantias"/>
-        <TextView
-            android:id="@+id/deposito"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="14sp"
-            android:layout_marginLeft="10dp"
-            android:textColor="@color/blanco"
-            android:text="Depositamos a tu Banco"/>
-        <TextView
-            android:id="@+id/oficinas"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="14sp"
-            android:layout_marginLeft="10dp"
-            android:textColor="@color/blanco"
-            android:text="Oficinas en tu Ciudad"/>
+            android:orientation="horizontal">
 
-    </LinearLayout>
+            <LinearLayout
+                android:id="@+id/contIzquierdoItem"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-</LinearLayout>
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/img_banco"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@color/blanco"
+                        android:scaleType="centerCrop" />
+
+                    <LinearLayout
+                        android:id="@+id/infoBanco"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/nombreBanco"
+                            android:layout_width="178dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:textSize="18sp"
+                            android:textColor="@color/azulF"
+                            android:textAppearance="?attr/textAppearanceListItem" />
+                        <View
+                            android:id="@+id/linea"
+                            android:layout_width="wrap_content"
+                            android:layout_height="1dp"
+                            android:background="@color/grisD"
+                            android:layout_above="@+id/compartir"
+                            android:layout_toRightOf="@+id/imagen"/>
+                        <LinearLayout
+                            android:id="@+id/contCat"
+                            android:layout_width="200dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/textCat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/leyendaCat"
+                                android:textColor="@color/azulF"
+                                android:textSize="20sp"
+                                android:layout_marginRight="10dp" />
+
+                            <TextView
+                                android:id="@+id/cat"
+                                android:layout_width="125dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="20sp"
+                                android:textColor="@color/colorAccent" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/contDerechoItem"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+                    <Button
+                        android:id="@+id/meInteresa"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="@string/meInteresa"
+                        android:textColor="@color/blanco"
+                        android:background="@drawable/estilo_boton"/>
+                    <Button
+                        android:id="@+id/masInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="@string/masInfo"
+                        android:textColor="@color/blanco"
+                        android:background="@drawable/boton_2"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</com.xenione.libs.swipemaker.SwipeLayout>

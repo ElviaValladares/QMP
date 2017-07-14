@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.efisys.quienmepresta.swipe.CreditoCoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/creditoSwipeItem"
     android:layout_width="match_parent"
     android:layout_height="100dp">
 
-    <include layout="@layout/credito_item_front" />
     <include layout="@layout/credito_item_back" />
+    <include layout="@layout/credito_item_front" />
 
     <View
+        android:id="@+id/linea"
         android:layout_width="wrap_content"
         android:layout_height="1dp"
-        android:background="#ffd5d5d5"
-        android:id="@+id/linea"
+        android:background="@color/grisD"
         android:layout_above="@+id/compartir"
         android:layout_toRightOf="@+id/imagen"/>
 
