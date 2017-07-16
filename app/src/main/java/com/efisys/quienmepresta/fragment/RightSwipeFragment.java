@@ -35,7 +35,7 @@ public class RightSwipeFragment extends Fragment implements RightSwipeAdapter.On
     }
 
     private void initRecyclerView(View view) {
-        RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.swipe_list);
+        RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.creditoSwipeActivity);
         recyclerView.setHasFixedSize(true);
         LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
         recyclerView.setLayoutManager(layoutManager);

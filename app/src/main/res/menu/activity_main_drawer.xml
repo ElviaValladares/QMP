@@ -4,34 +4,34 @@
         <item
             android:id="@+id/inicio"
             android:icon="@mipmap/ic_home"
-            android:title="Inicio" />
+            android:title="Inicio"/>
         <item
             android:id="@+id/solicitaCred"
             android:icon="@mipmap/ic_assignment_black_24dp"
-            android:title="Solicitar Credito" />
+            android:title="Solicitar crédito" />
         <item
             android:id="@+id/misCreditos"
             android:icon="@mipmap/ic_monetization_on_black"
-            android:title="Mis Creditos" />
+            android:title="Mis créditos" />
 
         <item
             android:id="@+id/miPerfil"
             android:icon="@mipmap/ic_account_black_18dp"
-            android:title="Mi Perfil" />
+            android:title="Mi perfil" />
 
         <item
             android:id="@+id/miScore"
             android:icon="@mipmap/ic_poll_black_24dp"
-            android:title="Mi Score" />
+            android:title="Mi score" />
 
         <item
             android:id="@+id/configuracion"
             android:icon="@mipmap/ic_settings_black_24dp"
-            android:title="Configuracion" />
+            android:title="Configuración" />
         <item
             android:id="@+id/cerrarSesion"
             android:icon="@mipmap/ic_close"
-            android:title="Cerrar Sesion" />
+            android:title="Cerrar sesión" />
     </group>
 
 </menu>

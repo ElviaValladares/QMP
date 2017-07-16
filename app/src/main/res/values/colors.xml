@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- ESTOS SON LOS COLORES PRINCIPALES -->
-    <color name="colorPrimary">#d6458a</color>
+    <color name="colorPrimary">#077536</color>
     <color name="colorPrimaryDark">#393F4B</color>
     <color name="colorAccent">#000000</color>
 

@@ -13,7 +13,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/leyendaBeneficios"
+            android:id="@+id/txtLeyendaBeneficios"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="17sp"
@@ -21,7 +21,7 @@
             android:textStyle="bold"
             android:text="@string/leyendaBeneficio"/>
         <TextView
-            android:id="@+id/avales"
+            android:id="@+id/txtAvales"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="14sp"
@@ -29,7 +29,7 @@
             android:textColor="@color/blanco"
             android:text="@string/avales"/>
         <TextView
-            android:id="@+id/deposito"
+            android:id="@+id/txtDeposito"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="14sp"
@@ -37,7 +37,7 @@
             android:textColor="@color/blanco"
             android:text="@string/deposito"/>
         <TextView
-            android:id="@+id/oficinas"
+            android:id="@+id/txtOficinas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="14sp"

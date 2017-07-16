@@ -23,8 +23,15 @@ import android.view.Gravity;
 import android.view.MenuItem;
 import android.widget.ImageView;
 
+import com.efisys.quienmepresta.fragment.ConfiguracionFragment;
 import com.efisys.quienmepresta.fragment.CreditoSwiperFragment;
+import com.efisys.quienmepresta.fragment.MiPerfilFragment;
+import com.efisys.quienmepresta.fragment.MiScoreFragment;
+import com.efisys.quienmepresta.fragment.MisCreditosFragment;
 import com.efisys.quienmepresta.fragment.SolicitaCreditoVista;
+import com.efisys.quienmepresta.fragment.SolicitarCredFragment;
+
+import static com.efisys.quienmepresta.R.id.drawer_layout;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -37,7 +44,7 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = (DrawerLayout) findViewById(drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
@@ -54,15 +61,13 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = (DrawerLayout) findViewById(drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
             super.onBackPressed();
         }
     }
-
-    private String hola = "HOlA";
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
@@ -73,25 +78,36 @@ public class MainActivity extends AppCompatActivity
         switch(id){
             case R.id.inicio: {
                 showFragment(CreditoSwiperFragment.newInstance(), CreditoSwiperFragment.TAG);
+                getSupportActionBar().setTitle(R.string.app_name);
                 break;
             }
             case R.id.solicitaCred: {
-                i = new Intent(this, SolicitaCreditoVista.class);
-                i.putExtras(contenedor);
-                startActivity(i);
-                //showFragment(HalfRightSwipeFragment.newInstance(), HalfRightSwipeFragment.TAG);
+                showFragment(SolicitarCredFragment.newInstance(), SolicitarCredFragment.TAG);
+                getSupportActionBar().setTitle(R.string.solicitarCredito);
                 break;
             }
-                case R.id.miPerfil: {
-                    i = new Intent(this, PerfilVista.class);
-                    i.putExtras(contenedor);
-                    startActivity(i);
-                    //showFragment(CreditoSwiperFragment.newInstance(), CreditoSwiperFragment.TAG);
-                    break;
+            case R.id.misCreditos:{
+                showFragment(MisCreditosFragment.newInstance(),MisCreditosFragment.TAG);
+                getSupportActionBar().setTitle(R.string.misCreditos);
+                break;
+            }
+            case R.id.miPerfil: {
+                showFragment(MiPerfilFragment.newInstance(),MiPerfilFragment.TAG);
+                getSupportActionBar().setTitle(R.string.miPerfil);
+                break;
+            }
+            case R.id.miScore:{
+                showFragment(MiScoreFragment.newInstance(),MiScoreFragment.TAG);
+                getSupportActionBar().setTitle(R.string.miScore);
+                break;
+            }
+            case R.id.configuracion:{
+                showFragment(ConfiguracionFragment.newInstance(),ConfiguracionFragment.TAG);
+                getSupportActionBar().setTitle(R.string.configuracion);
+                break;
             }
             case R.id.cerrarSesion:{
                 i = new Intent(this, InicioActivity.class);
-
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP  && Build.VERSION.SDK_INT < Build.VERSION_CODES.M) {
                     Slide slide = new Slide(Gravity.LEFT);
                     slide.setDuration(500);
@@ -105,7 +121,7 @@ public class MainActivity extends AppCompatActivity
                 break;
             }
         }
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = (DrawerLayout) findViewById(drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
@@ -120,7 +136,6 @@ public class MainActivity extends AppCompatActivity
         tr.replace(R.id.fragment_container, fragment, tag)
                 .commit();
     }
-
     private void launchSharer() {
         Intent sendIntent = new Intent();
         sendIntent.setAction(Intent.ACTION_SEND);

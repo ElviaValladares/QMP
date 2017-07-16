@@ -26,6 +26,13 @@
     <string name="leyendaCat">CAT:</string>
     <string name="meInteresa">ME INTERESA</string>
     <string name="masInfo">+ INFORMACION</string>
-    <!--CREDITO ITEM FRONT-->
+
+    <!-- FRAGMENTOS -->
+    <string name="solicitarCredito">Solicitar crédito</string>
+    <string name="misCreditos">Mis créditos</string>
+    <string name="miPerfil">Mi perfil</string>
+    <string name="miScore">Mi score</string>
+    <string name="configuracion">Configuración</string>
+
 
 </resources>

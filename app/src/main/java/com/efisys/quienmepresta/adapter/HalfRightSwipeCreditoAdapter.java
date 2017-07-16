@@ -110,17 +110,17 @@ public class HalfRightSwipeCreditoAdapter  extends RecyclerView.Adapter<HalfRigh
     public static class ViewHolder extends RecyclerView.ViewHolder {
 
         // Campos respectivos de un item
-        @Bind(R.id.img_banco)
+        @Bind(R.id.imgBanco)
         public ImageView banco;
-        @Bind(R.id.nombreBanco)
+        @Bind(R.id.txtNombreBanco)
         public TextView nombBanco;
-        @Bind(R.id.cat)
+        @Bind(R.id.txtCat)
         public TextView cat;
-        @Bind(R.id.avales)
+        @Bind(R.id.txtAvales)
         public TextView aval;
-        @Bind(R.id.deposito)
+        @Bind(R.id.txtDeposito)
         public TextView depositos;
-        @Bind(R.id.oficinas)
+        @Bind(R.id.txtOficinas)
         public TextView oficina;
         public CreditoCoordinatorLayout coordinatorLayout;
         @Bind(R.id.foregroundView)
